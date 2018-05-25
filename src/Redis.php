@@ -28,7 +28,7 @@ class Redis{
      */
     private  $_options=[
         'prefix'=>'roy_',
-        'host'=>'119.3.6.51',
+        'host'=>'127.0.0.1',
         'port'=>'6379',
         'timeout'=>3,
     ];
