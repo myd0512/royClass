@@ -40,7 +40,7 @@ class Token
      * @param string $name 缓存变量名
      * @return mixed
      */
-    public static function get($name=false){
+    public function get($name=false){
         return self::$rd->get($name);
     }
 
@@ -51,7 +51,7 @@ class Token
      * @param mixed $value  存储数据
      * @return boolen
      */
-    public static function set($name, $value){
+    public function set($name, $value){
         return self::$rd->set($name, $value);
     }
 
@@ -61,7 +61,7 @@ class Token
      * @param string $name 缓存变量名
      * @return boolen
      */
-    public static function rm($name){
+    public function rm($name){
         return self::$rd->rm($name);
     }
 
@@ -70,7 +70,7 @@ class Token
      * @param string $key 表头
      * @param string $value 值
      */
-    public static function push($key,$value){
+    public function push($key,$value){
         return self::$rd->push($key,$value);
     }
 
@@ -80,7 +80,7 @@ class Token
      * @param number $timeout 延时   0无限等待
      * @return Ambigous <NULL, mixed>
      */
-    public static function pop($key,$timeout=0){
+    public function pop($key,$timeout=0){
         return self::$rd->pop($key,$timeout);
     }
 
@@ -90,7 +90,7 @@ class Token
      * @param unknown $son_key
      * @return boolean
      */
-    public static function srem($key,$son_key){
+    public function srem($key,$son_key){
         return self::$rd->srem($key,$son_key);
     }
 
