@@ -1,0 +1,24 @@
+{
+    "name": "royclass/token",
+    "description":"TOKEN认证",
+    "license": "MIT",
+    "keywords":["TOKEN","认证"],
+    "version": "1.0.0",
+    "authors":[
+        {
+            "name":"roy",
+            "email":"myd0512@163.com"
+        }
+    ],
+    "require":
+    {
+        "php":">=5.6.0"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "royClass\\": "src/"
+        }
+    }
+}
